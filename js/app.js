@@ -75,7 +75,6 @@ function plusOne() {
 //5. Add an event to the plus icon that will increment the price of the Air Jordan V shoe each time the icon is clicked on.
 
 var priceInc = document.getElementsByClassName('far fa-plus-square');
-console.log(priceInc);
 
 for (var i=0; i<priceInc.length; i++) {
     priceInc[i].addEventListener('click', priceUp);
@@ -89,7 +88,6 @@ function priceUp() {
 //6. Add an event to the minus icon that will decrement the price of the Air Jordan VI shoe each time the icon is clicked on.
 
 var priceDec = document.getElementsByClassName('far fa-minus-square');
-console.log(priceDec);
 
 for (var i=0; i<priceDec.length; i++) {
     priceDec[i].addEventListener('click', priceDown);
