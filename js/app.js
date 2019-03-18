@@ -52,6 +52,26 @@ function onClickDesc() {
 
 //4. Add events to the all the thumbs up icon that will add a count for each time the icon is clicked on for any shoe.
 
+var thumbsUpClass = document.getElementsByClassName('far fa-thumbs-up');
+
+for (var i=0;i<thumbsUpClass.length;i++) {
+    var thumbCntr = document.createElement('span');
+    thumbCntr.className = 'likeCnt';
+    thumbCntr.value = 0;
+    thumbsUpClass[i].appendChild(thumbCntr);
+}
+
+// add event listeners thumbs up icons
+for (var i=0; i<thumbsUpClass.length; i++) {
+    thumbsUpClass[i].addEventListener('click', plusOne);
+}
+
+function plusOne() {
+    this.querySelectorAll('.likeCnt')[0].value++;
+    this.querySelectorAll('.likeCnt')[0].innerHTML = this.querySelectorAll('.likeCnt')[0].value;
+}
+
+
 //5. Add an event to the plus icon that will increment the price of the Air Jordan V shoe each time the icon is clicked on.
 
 //6. Add an event to the minus icon that will decrement the price of the Air Jordan VI shoe each time the icon is clicked on.
