@@ -34,15 +34,21 @@ function hideDesc() {
 // create a div element with an id of 'descrip2'
 //append this element to the div element with the id of 'name2' 
 
-// function addDesc() {
-//     console.log(divDesc1);
-//     if (divDesc1.style.display==='none' || divDesc1.style.display==='') {
-//         divDesc1.style.display='block'
-//     } else {
-//         divDesc1.style.display='none';
-//     }
+
+var divDesc2 = document.createElement('div');
+divDesc2.innerHTML = "The instantly recognizable Jumpman silhouette made its debut with the Air Jordan 3 during Michael Jordan's 1987-88 NBA season.";
+divDesc2.style.display='none';
+name2.appendChild(divDesc2);
+name2.addEventListener('click',onClickDesc);
+
+function onClickDesc() {
+    if (divDesc2.style.display==='none') {
+        divDesc2.style.display='block'
+    } else {
+        divDesc2.style.display='none';
+    }
     
-// }
+}
 
 //4. Add events to the all the thumbs up icon that will add a count for each time the icon is clicked on for any shoe.
 
