@@ -12,15 +12,37 @@ function alertBox() {
 
 //2. Add an event to the div element with the id of 'name1' that will show/hide the description ('descrip1') after hovering over Air Jordan II.
 
+var divName1 = document.getElementById('name1');
+divName1.addEventListener('mouseover',addDesc);
+divName1.addEventListener('mouseout',hideDesc);
+
+var divDesc1 = document.getElementById('descrip1');
+
+function addDesc() {
+    divDesc1.style.display='block'
+}
+
+function hideDesc() {
+    divDesc1.style.display='none'
+}
 
 
 //3. Add an event to the div element with the id of 'name2' that will show/hide the following description after clicking on the element.
 //'The instantly recognizable Jumpman silhouette made its debut with the Air Jordan 3 during Michael Jordan's 1987-88 NBA season.'
 
-
 //You'll need to:
 // create a div element with an id of 'descrip2'
 //append this element to the div element with the id of 'name2' 
+
+// function addDesc() {
+//     console.log(divDesc1);
+//     if (divDesc1.style.display==='none' || divDesc1.style.display==='') {
+//         divDesc1.style.display='block'
+//     } else {
+//         divDesc1.style.display='none';
+//     }
+    
+// }
 
 //4. Add events to the all the thumbs up icon that will add a count for each time the icon is clicked on for any shoe.
 
