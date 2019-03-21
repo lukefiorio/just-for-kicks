@@ -124,4 +124,12 @@ function makeBigger() {
 
 //9. Add events to both the plus and minus icon that will add or decrease the price each time the respective icon is clicked on.
 
+/* already done -- see q5 & q6 */
+
 //10. Add an event to the Air Jordan XXVIII shoe that will show the famous 'crying Michael Jordan' meme after clicking on the image.
+
+imgSneakers[9].addEventListener('click',cryingMeme);
+
+function cryingMeme() {
+    imgSneakers[9].src = 'https://media.npr.org/assets/img/2016/03/29/ap_090911089838_sq-3271237f28995f6530d9634ff27228cae88e3440-s800-c85.jpg'
+}
